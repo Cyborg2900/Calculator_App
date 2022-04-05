@@ -13,18 +13,12 @@ console.log(num);
 
 document.getElementById("display").value=num;
 
+for(let i=0;i<=9;i++){
+    document.getElementById('btn-'+i).addEventListener('click',function(){
+        editnum(i);
+    })
+}
 
-
-document.getElementById('btn-0').addEventListener('click',function(){  editnum(0) });
-document.getElementById('btn-1').addEventListener('click',function(){  editnum(1) });
-document.getElementById('btn-2').addEventListener('click',function(){  editnum(2) });
-document.getElementById('btn-3').addEventListener('click',function(){  editnum(3) });
-document.getElementById('btn-4').addEventListener('click',function(){  editnum(4) });
-document.getElementById('btn-5').addEventListener('click',function(){  editnum(5) });
-document.getElementById('btn-6').addEventListener('click',function(){  editnum(6) });
-document.getElementById('btn-7').addEventListener('click',function(){  editnum(7) });
-document.getElementById('btn-8').addEventListener('click',function(){  editnum(8) });
-document.getElementById('btn-9').addEventListener('click',function(){  editnum(9) });
 
 document.getElementById('btn-.').addEventListener('click',function(){ 
  }); // get back to it
